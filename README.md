@@ -45,26 +45,6 @@ Tourism Management System is a modern web application built using React.js. It a
 
 ---
 
-## 📁 Project Structure
-
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   └── Card.jsx
-├── pages/
-│   ├── Home.jsx
-│   ├── Places.jsx
-│   ├── Services.jsx
-│   ├── Gallery.jsx
-│   ├── Contact.jsx
-│   └── Admin.jsx
-├── assets/
-│   └── images/
-├── App.jsx
-└── main.jsx
-
----
 
 ## ⚙️ Installation & Setup
 
