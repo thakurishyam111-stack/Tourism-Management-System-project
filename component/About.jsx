@@ -22,7 +22,7 @@ const About = () => {
             />
           </div>
 
-          {/* Right - Content */}
+          
           <div>
             <h3 className="text-3xl font-bold text-slate-900 mb-4">Welcome to Nepal</h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
@@ -37,7 +37,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-6 mb-16 py-12 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl px-8">
           <div className="text-center">
             <div className="text-4xl font-bold text-orange-600 mb-2">8</div>
