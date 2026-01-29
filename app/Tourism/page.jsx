@@ -105,7 +105,7 @@ const App = () => {
                   onClick={() => setShowBookingForm(true)}
                   className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-2 px-6 rounded-lg transition transform hover:scale-105"
                 >
-                  + Add New Booking
+                  Add New Booking
                 </button>
               </div>
 
@@ -180,7 +180,7 @@ const App = () => {
                 <h4 className="text-2xl font-bold mb-6 text-slate-900">🎉 Exclusive Offers</h4>
                 <div className="space-y-4">
                   <div className="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-lg border-l-4 border-red-500 hover:shadow-md transition">
-                    <p className="text-red-700 font-bold text-lg">🎯 Everest Trek Special</p>
+                    <p className="text-red-700 font-bold text-lg"> Everest Trek Special</p>
                     <p className="text-gray-600 text-sm mt-2">Get 20% discount on bookings this month</p>
                     <p className="text-red-600 font-semibold text-sm mt-2">Limited time offer!</p>
                   </div>
