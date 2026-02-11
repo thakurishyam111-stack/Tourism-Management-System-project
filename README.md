@@ -9,21 +9,48 @@ A web-based Tourism Management System designed to provide information about tour
 Tourism Management System is a modern web application built using React.js. It aims to digitalize tourism services by providing a user-friendly interface for tourists and a management panel for administrators.
 
 ---
+✨ Features – Tourism Management System
+🌐 User Interface
 
-## 🚀 Features
+User-friendly & Responsive UI – Simple, clean ra intuitive interface for all users
 
-- User-friendly and responsive UI
-- Tourist destinations listing
-- Tour packages details
-- Hotel and service information
-- Contact & inquiry system
-- Admin dashboard
-- Easy navigation using React Router
-- Mobile-friendly design
+Mobile-friendly Design – Fully responsive layout for mobile, tablet, and desktop
 
----
+Easy Navigation – Smooth page navigation using React Router
 
-## 🛠️ Tech Stack
+🏞 Tourist Destinations
+
+Tourist Destinations Listing – Popular ra featured tourist destinations ko detailed list
+
+Destination Details Page – Location, description, images, and highlights
+
+🎒 Tour Packages
+
+Tour Package Listings – Different tour packages with pricing and duration
+
+Package Details – Itinerary, inclusions, exclusions, and booking information
+
+🏨 Hotels & Services
+
+Hotel Information – Hotels list with amenities and location details
+
+Additional Services – Transportation, guide services, and other travel-related services
+
+📩 Contact & Inquiry
+
+Contact Form – Users can easily send inquiries or feedback
+
+Inquiry Management – Messages stored and managed from admin panel
+
+🛠 Admin Dashboard
+
+Admin Panel – Secure dashboard for system management
+
+Manage Destinations – Add, update, and delete tourist destinations
+
+Manage Packages – Create and modify tour packages
+
+Manage Inquiries – View and respond to user messages
 
 ### Frontend
 - React.js

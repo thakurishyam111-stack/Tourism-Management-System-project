@@ -8,7 +8,7 @@ const places = [
     id: 1,
     name: "Kathmandu Valley",
     desc: "Cultural and historical heart of Nepal. city of temples and palaces.",
-    img: "https://cdn-aimdc.nitrocdn.com/FbrXgKxnupBRVYozRujieHUXZWIcKXKy/assets/images/optimized/rev-2dd7e32/excitingnepal.com/wp-content/uploads/2016/07/Kathmandu-and-Heritage-Site-Tour-6.jpg",
+    img: "https://shambalahotel.com/wp-content/themes/yootheme/cache/11/intro-places-118df2b9.jpeg",
     details: "Kathmandu Valley is the cultural and historical heart of Nepal. This UNESCO World Heritage Site is home to over 2 million people and contains some of the most important temples and palaces in Nepal. Key attractions include the Durbar Square, Pashupatinath Temple, and Boudhanath Stupa.",
     bestTime: "September to November, February to March",
     duration: "2-3 days",
