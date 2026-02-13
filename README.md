@@ -4,11 +4,6 @@ A web-based Tourism Management System designed to provide information about tour
 
 ---
 
-## 📌 Project Overview
-
-Tourism Management System is a modern web application built using React.js. It aims to digitalize tourism services by providing a user-friendly interface for tourists and a management panel for administrators.
-
----
 ✨ Features – Tourism Management System
 🌐 User Interface
 
