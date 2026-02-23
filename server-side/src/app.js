@@ -1,10 +1,22 @@
 const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
 const users = [];
 
 // Middleware to parse JSON
 app.use(express.json());
+
+// MongoDB Connection
+const connectDB = async () => {
+  try {
+    await mongoose.connect("mongodb://127.0.0.1:27017/tourism-management");
+    console.log("MongoDB connected successfully!");
+  } catch (error) {
+    console.error("MongoDB connection error:", error.message);
+    process.exit(1);
+  }
+};
 
 // GET route to retrieve all users
 app.get("/users", (req, res) => {
@@ -13,7 +25,6 @@ app.get("/users", (req, res) => {
     data: users,
   });
 });
-
 
 // POST route to create a new user
 app.post("/users", (req, res) => {
@@ -24,4 +35,4 @@ app.post("/users", (req, res) => {
   });
 });
 
-module.exports = app;
+module.exports = { app, connectDB };

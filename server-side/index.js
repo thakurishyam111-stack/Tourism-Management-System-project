@@ -1,8 +1,16 @@
- 
-const app = require('./src/app');
+const { app, connectDB } = require('./src/app');
 const port = process.env.PORT || 8080;
-connect();
 
-app.listen(8080, () => {
-  console.log(`server is running on port ${port} `)
-});
+const startServer = async () => {
+  try {
+    await connectDB();
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+    });
+  } catch (error) {
+    console.error("Failed to start server:", error.message);
+    process.exit(1);
+  }
+};
+
+startServer();
