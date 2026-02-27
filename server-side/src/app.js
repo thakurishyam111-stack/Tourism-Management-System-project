@@ -1,38 +1,49 @@
 const express = require("express");
-const mongoose = require("mongoose");
+const cors = require("cors");
+const userRoutes = require("../routes/user.js");
 
 const app = express();
-const users = [];
 
-// Middleware to parse JSON
+// Middleware
+app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// MongoDB Connection
-const connectDB = async () => {
-  try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/tourism-management");
-    console.log("MongoDB connected successfully!");
-  } catch (error) {
-    console.error("MongoDB connection error:", error.message);
-    process.exit(1);
-  }
-};
+// Routes
+app.use("/api/users", userRoutes);
 
-// GET route to retrieve all users
-app.get("/users", (req, res) => {
+// Health check route
+app.get("/api/health", (req, res) => {
   res.status(200).json({
-    message: "Users retrieved successfully",
-    data: users,
+    success: true,
+    message: "Server is running",
   });
 });
 
-// POST route to create a new user
-app.post("/users", (req, res) => {
-  users.push(req.body);
-  res.status(201).json({
-    message: "User created successfully",
-    data: req.body,
+// Basic route
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Welcome to Tourism Management API",
   });
 });
 
-module.exports = { app, connectDB };
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: "Route not found",
+  });
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({
+    success: false,
+    message: "Internal server error",
+    error: err.message,
+  });
+});
+
+module.exports = app;
