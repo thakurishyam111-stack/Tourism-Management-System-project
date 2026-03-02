@@ -9,7 +9,10 @@ import Book from "../admin/Booking/Book";
 const App = () => {
   return (
     <>
+    
       <div className="font-sans bg-white">
+    <navbar/>
+
         {/* Hero Section */}
         <div className="relative h-screen bg-cover bg-center flex items-center justify-center overflow-hidden" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80)" }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
