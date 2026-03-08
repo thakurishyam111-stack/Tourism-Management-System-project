@@ -5,8 +5,6 @@ import axios from 'axios'
 
 import Link from 'next/link';
 
-
-
 export const Places = () => {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [showModal, setShowModal] = useState(false);
