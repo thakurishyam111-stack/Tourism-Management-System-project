@@ -13,7 +13,7 @@ export const Places = () => {
   useEffect(()=>{
      axios.get("http://localhost:8080/places")
      .then((response) => {
-       setPlaces(response.data);
+       setPlaces(response?.data?.places);
      })
      .catch((error) => {
        console.error("Error fetching places:", error);

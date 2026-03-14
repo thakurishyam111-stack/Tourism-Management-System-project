@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const placeRoutes = require("./routes/placeRouters");
 const app = express();
+
 app.use(express.json());
 app.use(cors());
 
@@ -18,6 +19,7 @@ app.use("/users", require("./routes/userRoutes"));
 app.use("/tours", require("./routes/tourRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/places", require("./routes/placeRouters"));
+app.use("/services", require("./routes/servicesRoutes"));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Server running on port ${port}`));

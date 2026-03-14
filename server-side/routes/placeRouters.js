@@ -6,11 +6,9 @@ const Place = require("../models/place");
 router.get("/", async (req, res) => {
   try {
     const places = await Place.find();
-    res.json(places);
+    res.status(200).json({ success: true, places });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Could not fetch places", error: err.message });
+    res.status(500).json({ success: false, message: "Could not fetch places", error: err.message });
   }
 });
 
@@ -18,12 +16,10 @@ router.get("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const place = await Place.findById(req.params.id);
-    if (!place) return res.status(404).json({ message: "Place not found" });
-    res.json(place);
+    if (!place) return res.status(404).json({ success: false, message: "Place not found" });
+    res.status(200).json({ success: true, place });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Error fetching place", error: err.message });
+    res.status(500).json({ success: false, message: "Error fetching place", error: err.message });
   }
 });
 
@@ -32,26 +28,20 @@ router.post("/", async (req, res) => {
   try {
     const place = new Place(req.body);
     await place.save();
-    res.status(201).json(place);
+    res.status(201).json({ success: true, place });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Could not create place", error: err.message });
+    res.status(500).json({ success: false, message: "Could not create place", error: err.message });
   }
 });
 
 // PUT update place
 router.put("/:id", async (req, res) => {
   try {
-    const place = await Place.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-    });
-    if (!place) return res.status(404).json({ message: "Place not found" });
-    res.json(place);
+    const place = await Place.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!place) return res.status(404).json({ success: false, message: "Place not found" });
+    res.status(200).json({ success: true, place });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Could not update place", error: err.message });
+    res.status(500).json({ success: false, message: "Could not update place", error: err.message });
   }
 });
 
@@ -59,12 +49,10 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const place = await Place.findByIdAndDelete(req.params.id);
-    if (!place) return res.status(404).json({ message: "Place not found" });
-    res.json({ success: true, deleted: place });
+    if (!place) return res.status(404).json({ success: false, message: "Place not found" });
+    res.status(200).json({ success: true, message: "Place deleted successfully" });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Could not delete place", error: err.message });
+    res.status(500).json({ success: false, message: "Could not delete place", error: err.message });
   }
 });
 
