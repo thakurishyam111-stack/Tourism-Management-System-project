@@ -20,6 +20,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex-shrink-0">
+            
             <Link href="/" className="text-xl font-bold text-indigo-600">
               NepLa Tourism
             </Link>

@@ -46,11 +46,11 @@ const Book = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-6 md:px-12">
+    <div className=" bg-gray-600 min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-slate-900 mb-4">📅 Booking Management System</h1>
+          <h1 className=" text-5xl font-bold text-slate-900 mb-4 text-center"> Booking </h1>
           <p className="text-gray-600 text-lg">Manage and track all your tourism bookings</p>
         </div>
 
@@ -58,7 +58,7 @@ const Book = () => {
         <div className="flex justify-end mb-8">
           <button
             onClick={() => setShowBookingForm(true)}
-            className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
+            className="bg-green-500 from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
           >
             + Add New Booking
           </button>

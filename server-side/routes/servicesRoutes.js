@@ -95,7 +95,7 @@ router.put("/:id", async (req, res) => {
 });
 
 // DELETE service by ID
-router.delete("/", async (req, res) => {
+router.delete("/:id", async (req, res) => {
   try {
     const service = await Service.findById(req.params.id);
     if (!service)

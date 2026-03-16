@@ -32,7 +32,7 @@ export const Places = () => {
 
   return (
     <>
-      <div className='bg-gray-600'>
+      <div className='bg-gray-500'>
         <section className="p-10">
           <h2 className="text-3xl font-bold text-center mb-10 text-white">
             Major Tourist Places
@@ -48,9 +48,9 @@ export const Places = () => {
                   <img src={place.img} alt={place.name} className="object-cover w-full h-full" />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-xl text-black font-semibold">{place.name}</h3>
-                  <p className="text-green-600 text-sm mt-2">{place.desc}</p>
-                  <button className="mt-3 bg-blue-500 text-white px-4 py-1 rounded text-sm hover:bg-blue-600">
+                  <h3 className="text-xl text-black text-center font-semibold">{place.name}</h3>
+                  <p className="text-gray-800 text-sm mt-2">{place.desc}</p>
+                  <button className="mt-3 bg-green-500 text-white text-center px-4 py-1 rounded text-sm hover:bg-blue-600">
                     View Details
                   </button>
                 </div>

@@ -60,37 +60,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Features Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-slate-900 mb-12 text-center">Why Choose Nepal?</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-l-4 border-blue-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🏔️</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Majestic Mountains</h4>
-              <p className="text-gray-700">Experience the world's highest peaks, pristine alpine meadows, and breathtaking panoramic views.</p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border-l-4 border-green-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🙏</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Rich Spirituality</h4>
-              <p className="text-gray-700">Visit sacred temples, meditate in serene monasteries, and connect with ancient spiritual traditions.</p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-l-4 border-purple-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🎉</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Vibrant Culture</h4>
-              <p className="text-gray-700">Immerse yourself in colorful festivals, traditional cuisine, and the warmth of Nepali hospitality.</p>
-            </div>
-
-            {/* Feature 4 */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-l-4 border-orange-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🪂</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Adventure Sports</h4>
-              <p className="text-gray-700">Trek, paraglide, raft, and explore with thrilling activities for every level of adventurer.</p>
-            </div>
+        
 
             {/* Feature 5 */}
             <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-xl border-l-4 border-teal-600 hover:shadow-lg transition">
@@ -106,17 +76,19 @@ const About = () => {
               <p className="text-gray-700">Enjoy world-class experiences at budget-friendly prices with excellent value for money.</p>
             </div>
           </div>
-        </div>
+        
 
         {/* Quick Facts */}
-        <div className="bg-white rounded-xl shadow-lg p-12 border-t-4 border-orange-500">
+        <div className="bg-gray-300 rounded-xl shadow-lg p-20 m-5   border-t-4 border-orange-500">
           <h3 className="text-2xl font-bold text-slate-900 mb-8">Quick Facts About Nepal</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex gap-4">
               <div className="text-2xl">📍</div>
               <div>
                 <p className="font-bold text-slate-900">Location</p>
-                <p className="text-gray-600">South Asia, between China and India</p>
+                <p className="text-gray-600">South Asia, between China and India
+                  <img src="" alt="" />
+                </p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -158,16 +130,15 @@ const About = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center">
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">Ready to Experience Nepal?</h3>
+        <div className="mt-16 text-center ">
+          <h3 className="text-3xl font-bold text-slate-900 mb-4 ">Ready to Experience Nepal?</h3>
           <p className="text-gray-600 mb-8 text-lg max-w-2xl mx-auto">
             Start your incredible journey today and create memories that will last a lifetime.
           </p>
-          <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 px-10 rounded-full text-lg transition transform hover:scale-105">
+          <button className="bg-green-500 from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 px-10 rounded-full text-lg transition transform hover:scale-105">
             Plan Your Trip Now
           </button>
         </div>
-      </div>
     </section>
   )
 }
