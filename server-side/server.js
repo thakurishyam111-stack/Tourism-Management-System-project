@@ -14,12 +14,14 @@ mongoose
   .connect(mongoUri)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log("MongoDB connection error", err));
+const userRoutes = require("./routes/userRoutes");
 
 app.use("/users", require("./routes/userRoutes"));
 app.use("/tours", require("./routes/tourRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/places", require("./routes/placeRouters"));
 app.use("/services", require("./routes/servicesRoutes"));
+
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Server running on port ${port}`));

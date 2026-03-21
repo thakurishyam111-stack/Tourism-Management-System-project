@@ -105,7 +105,7 @@ const Page = () => {
           
           {/* Header Section */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-8 text-white">
-            <h1 className="text-3xl font-bold text-center mb-2">Medlink Login</h1>
+            <h1 className="text-3xl font-bold text-center mb-2">Tourism Login</h1>
             <p className="text-center text-blue-100">Welcome Back</p>
           </div>
 
@@ -221,7 +221,7 @@ const Page = () => {
             {/* Sign Up Link */}
             <p className="text-center text-gray-700">
               Don't have an account?{' '}
-              <Link href="/signup" className="text-blue-600 hover:text-blue-800 font-semibold">
+              <Link href="/register" className="text-blue-600 hover:text-blue-800 font-semibold">
                 Sign Up
               </Link>
             </p>

@@ -12,7 +12,7 @@ const generateToken = (userId) => {
 // Signup Controller
 const signup = async (req, res) => {
   try {
-    const { fullName, email, password, confirmPassword } = req.body;
+    const { fullName, email,phone, password, confirmPassword } = req.body;
 
     // Validation
     if (!fullName || !email || !password || !confirmPassword) {

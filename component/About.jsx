@@ -62,19 +62,6 @@ const About = () => {
 
         
 
-            {/* Feature 5 */}
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-xl border-l-4 border-teal-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🌿</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Natural Beauty</h4>
-              <p className="text-gray-700">Discover pristine forests, crystal-clear lakes, and abundant wildlife in their natural habitat.</p>
-            </div>
-
-            {/* Feature 6 */}
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-xl border-l-4 border-pink-600 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">💰</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Affordable Travel</h4>
-              <p className="text-gray-700">Enjoy world-class experiences at budget-friendly prices with excellent value for money.</p>
-            </div>
           </div>
         
 

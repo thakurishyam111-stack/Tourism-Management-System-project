@@ -5,7 +5,6 @@ import { Places } from "../../component/Places";
 import About from "../../component/About";
 import Services from "../../component/Services";
 import Navbar from "../../component/Navbar";
-import Book from "../admin/Booking/Book";
 import Package from "../../component/Package";
 
 const App = () => {
@@ -33,7 +32,6 @@ const App = () => {
         <Places />
         <Services />
         {/* <Package/> */}
-        {/* <Book/> */}
 
         <Footer />
       </div>

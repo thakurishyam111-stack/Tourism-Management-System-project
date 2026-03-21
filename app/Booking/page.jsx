@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
-const Book = () => {
+const page = () => {
   const [bookings, setBookings] = useState([
     { id: 1, place: "Kathmandu Valley", date: "2024-02-15", guests: 4, status: "Confirmed" },
     { id: 2, place: "Pokhara", date: "2024-03-20", guests: 2, status: "Pending" },
@@ -46,19 +46,18 @@ const Book = () => {
   };
 
   return (
-    <div className=" bg-gray-600 min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-6 md:px-12">
+    <div className=" bg-gray-800 min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h1 className=" text-5xl font-bold text-slate-900 mb-4 text-center"> Booking </h1>
-          <p className="text-gray-600 text-lg">Manage and track all your tourism bookings</p>
+          <h1 className=" text-5xl font-bold text-black mb-4 text-center"> Booking </h1>
         </div>
 
         {/* Add Booking Button */}
         <div className="flex justify-end mb-8">
           <button
             onClick={() => setShowBookingForm(true)}
-            className="bg-green-500 from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
+            className="bg-blue-500 from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
           >
             + Add New Booking
           </button>
@@ -201,7 +200,7 @@ const Book = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 rounded-lg transition transform hover:scale-105 mt-8 text-lg"
+                className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 rounded-lg transition transform hover:scale-105 mt-8 text-lg"
               >
                 ✓ Create Booking
               </button>
@@ -213,4 +212,4 @@ const Book = () => {
   )
 }
 
-export default Book
+export default page
