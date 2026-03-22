@@ -63,7 +63,6 @@ Manage Inquiries – View and respond to user messages
 ### Tools & Platforms
 - Git & GitHub
 - VS Code
-- Vite
 
 ---
 
