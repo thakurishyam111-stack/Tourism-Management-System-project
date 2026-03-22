@@ -15,7 +15,7 @@ const signup = async (req, res) => {
     const { fullName, email,phone, password, confirmPassword } = req.body;
 
     // Validation
-    if (!fullName || !email || !password || !confirmPassword) {
+    if (!fullName || !email || !phone || !password || !confirmPassword) {
       return res.status(400).json({
         success: false,
         message: "All fields are required",
@@ -46,6 +46,7 @@ const signup = async (req, res) => {
     const newUser = new User({
       fullName,
       email,
+      phone,
       password: hashedPassword,
       role: "user",
     });

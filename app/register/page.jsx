@@ -55,19 +55,16 @@ const getPasswordStrengthColor = () => {
 
   // Handle input change
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+  const { name, value, type, checked } = e.target;
+  setFormData({
+    ...formData,
+    [name]: type === "checkbox" ? checked : value,
+  });
 
-    const newFormData = {
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    };
-
-    if (name === "password") {
-      setPasswordStrength(checkPasswordStrength(value));
-    }
-
-    setFormData(newFormData);
-  };
+  if (name === "password") {
+    setPasswordStrength(checkPasswordStrength(value));
+  }
+};
 
   // Form submit
   const handleSubmit = async (e) => {
@@ -118,6 +115,7 @@ const getPasswordStrengthColor = () => {
           email: formData.email,
           phone: formData.phone,
           password: formData.password,
+          confirmPassword: formData.confirmPassword,
         }),
       });
 
@@ -127,7 +125,7 @@ const getPasswordStrengthColor = () => {
         setSuccess("Registration successful! Redirecting to login...");
 
         setTimeout(() => {
-          router.push("/login");
+          router.push("/Tourism");
         }, 2000);
 
       } else {

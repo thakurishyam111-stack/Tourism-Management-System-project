@@ -6,6 +6,8 @@ import { Bell, User, Search } from "lucide-react";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
+// const { bookings } = useBookings();
+//   const pendingCount = bookings.filter(b => b.status === "Pending").length;
 
   const handleSearch = (e) => {
     e.preventDefault();
